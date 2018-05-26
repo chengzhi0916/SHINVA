@@ -5,7 +5,7 @@ var PostModel = require('./models/post');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'html' });
 });
 
 /* GET posts page. */
@@ -32,6 +32,10 @@ router.get('/posts/edit', function (req, res, next) {
   var id = req.query.id;
 
   res.render('edit', { id });
+});
+
+router.get('/tp', function(req, res, next) {
+  res.render('tp', { title: 'tp'} );
 });
 
 module.exports = router;
